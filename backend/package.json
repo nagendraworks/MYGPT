@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "typecheck": "bun check",
+    "dev": "nodemon --watch . --ext ts --exec bun index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/cors": "^2.8.19",
+    "cors": "^2.8.6",
+    "nodemon": "^3.1.14"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "@google/genai": "^3.6.1",
+    "@types/express": "^5.0.6",
+    "express": "^5.3.0"
+  }
+}
